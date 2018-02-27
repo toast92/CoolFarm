@@ -121,7 +121,8 @@ body{
 }
 
 .productimage img{
-  max-width: 35rem;
+  max-width: 100%;
+  max-height: 35rem;
 }
 
 .producttext{
@@ -172,6 +173,62 @@ body{
   line-height: 1.625em;
   font-weight: lighter;
 }
+
+  .cowimage img{
+    max-height: 68rem;
+    max-width: 100%;
+  }
+
+  footer{
+    background-color: #333;
+    color: rgba(244, 244, 244, 0.4);
+  }
+
+  footer ul li a{
+    color: rgba(244, 244, 244, 0.4);
+    text-decoration: none;
+  }
+
+  footer img{
+    max-width: 20rem;
+  }
+
+  .footercontainer{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-left: 5rem;
+    padding-top: 3rem;
+  }
+
+  .contactinfo{
+    display: flex;
+    padding-bottom:2rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    justify-content: space-between;
+  }
+
+  .menuend h4{
+    padding-top: 2rem;
+  }
+
+  .copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    padding-right: 4rem;
+
+  }
+
+  .copyright a i{
+    color: rgba(244, 244, 244, 0.4);
+  }
+
+  .socialmedia a i{
+    padding-right: 0.5rem;
+  }
+
+
 
 @media screen and (max-width: 1081px) and (min-width: 951px){
   .productimage img{
@@ -229,7 +286,7 @@ body{
   }
 
   .productimage img{
-    max-width: 25rem;
+    max-width: 100%;
   }
 
   .motto{
@@ -240,6 +297,43 @@ body{
   .mottoexpanded{
     font-size: 1em;
     line-height: 1.350em;
+  }
+
+  .mainmenu{
+    display:none;
+  }
+
+  .menuend{
+    line-height: 2rem;
+  }
+
+  .menuend ul li{
+    text-align:center;
+    font-size: 0.85rem;
+  }
+
+  .sponsor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact{
+    padding-top: 2rem;
+    line-height: 2rem;
+  }
+
+  .contactinfo{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .socialmedia{
+    padding-bottom: 2rem;
   }
 }
 
@@ -286,7 +380,7 @@ body{
     font-size: 1em;
   }
   .productimage img{
-    max-width: 20rem;
+    max-width: 100%;
   }
 
   .vision{
@@ -302,5 +396,42 @@ body{
   .mottoexpanded{
     font-size: 1em;
     line-height: 1.350em;
+  }
+
+  .mainmenu{
+    display:none;
+  }
+
+  .menuend{
+    line-height: 2rem;
+  }
+
+  .menuend ul li{
+    text-align:center;
+    font-size: 0.85rem;
+  }
+
+  .sponsor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact{
+    padding-top: 2rem;
+    line-height: 2rem;
+  }
+
+  .contactinfo{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .socialmedia{
+    padding-bottom: 2rem;
   }
 }
