@@ -191,16 +191,116 @@ body{
   }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) and (min-width: 491px){
+  #bars{
+    display: inline-block;
+    padding-left:2rem;
+  }
+
+  .menu ul{
+    display: none;
+  }
+
+  .intro h1{
+    font-size: 1.5rem;
+    max-width: 20rem;
+  }
+
+  .intro p{
+    font-size: 1.25rem;
+    max-width: 25rem;
+  }
+
+  .intro a{
+    font-size: 1.2rem;
+  }
+
   .product{
   flex-direction: column;
   }
 
   .producttext p{
     font-size: 1em;
+    padding-top:2rem;
   }
 
   .producttext a{
     font-size: 1em;
+  }
+
+  .productimage img{
+    max-width: 25rem;
+  }
+
+  .motto{
+    font-size: 1.75em;
+    line-height: 1em;
+  }
+
+  .mottoexpanded{
+    font-size: 1em;
+    line-height: 1.350em;
+  }
+}
+
+@media screen and (max-width: 490px){
+
+  #bars{
+    display: inline-block;
+    padding-left:2rem;
+  }
+
+  .menu ul{
+    display: none;
+  }
+
+  .intro h1{
+    font-size: 1.25rem;
+    max-width: 20rem;
+  }
+
+  .intro p{
+    font-size: 1rem;
+    max-width: 20rem;
+  }
+
+  .intro a{
+    font-size: 1rem;
+  }
+
+  .logoend {
+  justify-content: flex-end;
+  margin-right: 2rem;
+  }
+
+  .product{
+  flex-direction: column;
+  }
+
+  .producttext p{
+    font-size: 1em;
+    padding-top:2rem;
+  }
+
+  .producttext a{
+    font-size: 1em;
+  }
+  .productimage img{
+    max-width: 20rem;
+  }
+
+  .vision{
+    flex-direction: column;
+  }
+
+  .motto{
+    font-size: 1.75em;
+    line-height: 1em;
+    padding-bottom:3rem;
+  }
+
+  .mottoexpanded{
+    font-size: 1em;
+    line-height: 1.350em;
   }
 }
