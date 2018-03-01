@@ -41,7 +41,7 @@
   margin: 0 auto;
 }
 
-.headerintro{
+.headerIntro{
   display: flex;
   justify-content: space-around;
 }
@@ -120,41 +120,41 @@
   padding-left: 2rem;
 }
 
-.productreverse{
+.productReverse{
   display: flex;
   flex-direction: row-reverse;
 }
 
-.productimage{
+.productImage{
   flex:1.25;
 }
 
-.productimage img{
+.productImage img{
   max-width: 100%;
   max-height: 35rem;
 }
 
-.producttext{
+.productText{
   flex:1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.producttext p{
+.productText p{
   max-width: 28rem;
   font-size: 1.125em;
   line-height: 1.625em;
   font-weight: lighter;
 }
 
-.producttext a{
+.productText a{
   color: #43857C;
   font-weight: bold;
   padding-top: 3rem;
 }
 
-.logoend {
+.logoEnd {
   display: flex;
   justify-content: flex-end;
   margin-right: 8rem;
@@ -173,7 +173,7 @@
   padding-left: 2rem;
 }
 
-.mottoexpanded{
+.mottoExpanded{
   flex:2;
   padding-left: 2rem;
   font-size: 1.125em;
@@ -181,7 +181,7 @@
   font-weight: lighter;
 }
 
-  .cowimage img{
+  .cowImage img{
     max-height: 68rem;
     max-width: 100%;
   }
@@ -205,7 +205,7 @@
     padding-top: 3rem;
   }
 
-  .contactinfo{
+  .contactInfo{
     display: flex;
     padding-bottom:2rem;
     padding-top: 4rem;
@@ -213,7 +213,7 @@
     justify-content: space-between;
   }
 
-  .menuend h4{
+  .menuEnd h4{
     padding-top: 2rem;
   }
 
@@ -229,26 +229,26 @@
     color: rgba(244, 244, 244, 0.4);
   }
 
-  .socialmedia a i{
+  .socialMedia a i{
     padding-right: 0.5rem;
   }
 
 
 
 @media screen and (max-width: 1081px) and (min-width: 951px){
-  .productimage img{
+  .productImage img{
     max-width: 30rem;
   }
 }
 
 @media screen and (max-width: 950px) and (min-width:851px){
 
-  .producttext p{
+  .productText p{
     font-size: 1em;
     padding-left:2rem;
   }
 
-  .producttext a{
+  .productText a{
     padding-left: 2rem;
     font-size: 1em;
   }
@@ -282,16 +282,16 @@
   flex-direction: column;
   }
 
-  .producttext p{
+  .productText p{
     font-size: 1em;
     padding-top:2rem;
   }
 
-  .producttext a{
+  .productText a{
     font-size: 1em;
   }
 
-  .productimage img{
+  .productImage img{
     max-width: 100%;
   }
 
@@ -300,20 +300,20 @@
     line-height: 1em;
   }
 
-  .mottoexpanded{
+  .mottoExpanded{
     font-size: 1em;
     line-height: 1.350em;
   }
 
-  .mainmenu{
+  .mainMenu{
     display:none;
   }
 
-  .menuend{
+  .menuEnd{
     line-height: 2rem;
   }
 
-  .menuend ul li{
+  .menuEnd ul li{
     text-align:center;
     font-size: 0.85rem;
   }
@@ -328,7 +328,7 @@
     line-height: 2rem;
   }
 
-  .contactinfo{
+  .contactInfo{
     flex-direction: column;
     align-items: center;
   }
@@ -338,7 +338,7 @@
     align-items: center;
   }
 
-  .socialmedia{
+  .socialMedia{
     padding-bottom: 2rem;
   }
 
@@ -370,7 +370,7 @@
     display: block;
   }
 
-  .logoend {
+  .logoEnd {
   justify-content: flex-end;
   margin-right: 2rem;
   }
@@ -379,15 +379,15 @@
   flex-direction: column;
   }
 
-  .producttext p{
+  .productText p{
     font-size: 1em;
     padding-top:2rem;
   }
 
-  .producttext a{
+  .productText a{
     font-size: 1em;
   }
-  .productimage img{
+  .productImage img{
     max-width: 100%;
   }
 
@@ -401,20 +401,20 @@
     padding-bottom:3rem;
   }
 
-  .mottoexpanded{
+  .mottoExpanded{
     font-size: 1em;
     line-height: 1.350em;
   }
 
-  .mainmenu{
+  .mainMenu{
     display:none;
   }
 
-  .menuend{
+  .menuEnd{
     line-height: 2rem;
   }
 
-  .menuend ul li{
+  .menuEnd ul li{
     text-align:center;
     font-size: 0.85rem;
   }
@@ -429,7 +429,7 @@
     line-height: 2rem;
   }
 
-  .contactinfo{
+  .contactInfo{
     flex-direction: column;
     align-items: center;
   }
@@ -439,7 +439,7 @@
     align-items: center;
   }
 
-  .socialmedia{
+  .socialMedia{
     padding-bottom: 2rem;
   }
 }
