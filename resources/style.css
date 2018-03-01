@@ -14,19 +14,26 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-body{
-    font-family: 'Lato', sans-serif;
-}
+  body{
+      font-family: 'Lato', sans-serif;
+  }
 
-#bars{
-  display: none;
-}
+  #bars{
+    display: none;
+  }
 
 .header{
   background-color: #407F7F;
   color: white;
   padding-bottom: 6rem;
   padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.submenu{
+  max-height:200px;
+  overflow: hidden;
+  transition: 0.8s;
 }
 
 .headerintro{
@@ -71,8 +78,7 @@ body{
   flex-direction: column;
   margin-top: 9rem;
   align-items: flex-end;
-  margin-right: 5rem;
-  flex:1.5;
+  flex: 1.5;
 }
 
 .menu ul a{
@@ -237,6 +243,7 @@ body{
 }
 
 @media screen and (max-width: 950px) and (min-width:851px){
+
   .producttext p{
     font-size: 1em;
     padding-left:2rem;
@@ -254,8 +261,8 @@ body{
     padding-left:2rem;
   }
 
-  .menu ul{
-    display: none;
+  .submenu.closed{
+    max-height: 0;
   }
 
   .intro h1{
@@ -335,6 +342,7 @@ body{
   .socialmedia{
     padding-bottom: 2rem;
   }
+
 }
 
 @media screen and (max-width: 490px){
