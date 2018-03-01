@@ -202,14 +202,14 @@
 
   footer .container{
     padding-left: 5rem;
+    padding-right: 5rem;
     padding-top: 3rem;
   }
 
   .contactInfo{
     display: flex;
-    padding-bottom:2rem;
-    padding-top: 4rem;
-    padding-right: 4rem;
+    margin-bottom:2rem;
+    margin-top: 4rem;
     justify-content: space-between;
   }
 
@@ -221,8 +221,6 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 3rem;
-    padding-right: 4rem;
-
   }
 
   .copyright a i{
