@@ -22,7 +22,7 @@
     display: none;
   }
 
-.header{
+  header{
   background-color: #407F7F;
   color: white;
   padding-bottom: 6rem;
@@ -36,11 +36,14 @@
   transition: 0.8s;
 }
 
+.container{
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
 .headerintro{
   display: flex;
   justify-content: space-around;
-  max-width: 80rem;
-  margin: 0 auto;
 }
 
 .intro{
@@ -71,6 +74,7 @@
   color: white;
   font-size: 1.50rem;
   font-weight: bold;
+  display: block;
 }
 
 .menu{
@@ -103,9 +107,8 @@
   max-width: 20rem;
 }
 
-.maincontent{
-  max-width: 80rem;
-  margin: 0 auto;
+.logo a{
+  display: block;
 }
 
 .product{
@@ -159,8 +162,6 @@
 
 .vision{
   display: flex;
-  max-width: 80rem;
-  margin: 0 auto;
   padding-bottom: 5rem;
 }
 
@@ -199,9 +200,7 @@
     max-width: 20rem;
   }
 
-  .footercontainer{
-    max-width: 80rem;
-    margin: 0 auto;
+  footer .container{
     padding-left: 5rem;
     padding-top: 3rem;
   }
@@ -368,6 +367,7 @@
 
   .intro a{
     font-size: 1rem;
+    display: block;
   }
 
   .logoend {
