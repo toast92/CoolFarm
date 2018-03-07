@@ -231,8 +231,6 @@
     padding-right: 0.5rem;
   }
 
-
-
 @media screen and (max-width: 1081px) and (min-width: 951px){
   .productImage img{
     max-width: 30rem;
