@@ -1,55 +1,57 @@
+@import 'slider';
+
 @font-face {
-font-family: 'Lato';
-font-style: normal;
-font-weight: 300;
-src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
-unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
-unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 $teal : #407F7F;
 
 body{
-font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 #bars{
-display: none;
+    display: none;
 }
 
 header{
-background-color: $teal;
-color: white;
-padding-bottom: 6rem;
-padding-left: 4rem;
-padding-right: 4rem;
+    background-color: $teal;
+    color: white;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .submenu{
-max-height:200px;
-overflow: hidden;
-transition: 0.8s;
+    max-height:200px;
+    overflow: hidden;
+    transition: 0.8s;
 }
 
 .container{
-max-width: 80rem;
-margin: 0 auto;
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .headerIntro{
-display: flex;
-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .intro{
-margin-top: 4.5rem;
+    margin-top: 4.5rem;
     a {
         color: white;
         font-size: 1.50rem;
@@ -79,55 +81,55 @@ margin-top: 4.5rem;
     margin-top: 9rem;
     align-items: flex-end;
     flex: 1.5;
-        ul{
-            a{
-                text-decoration: none;
-                color: white;
-                font-weight: bold;
-            }
-            a:hover{
-                color: black;
-              }
-            li{
-                margin-bottom: 0.50rem;
-            }
-            
-        }
-  }
-
-  .logo{
-    padding-top: 2rem;
+    
+    ul{
         a{
-            display: block;
-            img{
-                max-width: 20rem;
-            }
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
         }
-  }
+        a:hover{
+            color: black;
+        }
+        li{
+            margin-bottom: 0.50rem;
+        }      
+    }
+}
 
-  .product{
+.logo{
+    padding-top: 2rem;
+    a{
+        display: block;
+        img{
+            max-width: 20rem;
+        }
+    }
+}
+
+.product{
     display: flex;
     max-width: 80rem;
     margin: 0 auto;
     justify-content: space-between;
     margin-bottom: 5rem;
     padding-left: 2rem;
-  }
+}
   
-  .productReverse{
+.productReverse{
     display: flex;
     flex-direction: row-reverse;
-  }
+}
   
-  .productImage{
+.productImage{
     flex:1.25;
     img{
         max-width: 100%;
         max-height: 35rem;
     }
-  }
+}
 
-  .productText{
+.productText{
     flex:1;
     display: flex;
     flex-direction: column;
@@ -143,128 +145,36 @@ margin-top: 4.5rem;
         font-weight: bold;
         padding-top: 3rem;
     }
-  }
+}
  
-  .logoEnd {
+.logoEnd {
     display: flex;
     justify-content: flex-end;
     margin-right: 8rem;
-  }
-  
-  .vision{
+}
+
+.vision{
     display: flex;
     padding-bottom: 5rem;
-  }
-  
-  .motto{
+}
+
+.motto{
     flex:1;
     font-size: 2.25em;
     line-height: 1.125em;
     font-weight: 700;
     padding-left: 2rem;
-  }
+}
   
-  .mottoExpanded{
+.mottoExpanded{
     flex:2;
     padding-left: 2rem;
     font-size: 1.125em;
     line-height: 1.625em;
     font-weight: lighter;
-  }
+}
 
-  .slideshow-container {
-    max-width: 100%;
-    
-    position: relative;
-    margin: auto;
-  }
-
-  .mySlides {
-         display: none; 
-      }
-
-    /* Next & previous buttons */
-    .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    }
-
-    /* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor:pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
-
-  footer{
+footer{
     background-color: #333;
     color: rgba(244, 244, 244, 0.4);
     ul{
@@ -283,20 +193,20 @@ margin-top: 4.5rem;
         padding-right: 5rem;
         padding-top: 3rem;
     }
-  }
+}
 
-  .contactInfo{
+.contactInfo{
     display: flex;
     margin-bottom:2rem;
     margin-top: 4rem;
     justify-content: space-between;
-  }
+}
 
-  .menuEnd h4{
+.menuEnd h4{
     padding-top: 2rem;
-  }
+}
 
-  .copyright{
+.copyright{
     display: flex;
     justify-content: space-between;
     padding-bottom: 3rem;
@@ -305,260 +215,233 @@ margin-top: 4.5rem;
             color: rgba(244, 244, 244, 0.4);
         }
     }
-  }
+}
 
-  .socialMedia {
-      a {
-          i{
-    padding-right: 0.5rem;
-          }
+.socialMedia {
+    a {
+        i{
+            padding-right: 0.5rem;
         }
-  }
-
-
-  @media screen and (max-width: 1081px) and (min-width: 951px){
-    .productImage {
-        img{
-      max-width: 30rem;
     }
-  }
 }
 
-    @media screen and (max-width: 950px) and (min-width:851px){
-        .productText{
-            p{
-                font-size: 1em;
-                padding-left:2rem;
-            }
-            a{
-                padding-left: 2rem;
-                font-size: 1em;
-            }
+.productEnd{
+    display: flex;
+    justify-content: flex-end;
+    flex: 0.5;
+}
+
+
+@media screen and (max-width: 1081px) and (min-width: 951px){
+    .productImage img{
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width:851px){
+    .productText{
+        p{
+            font-size: 1em;
+            padding-left:2rem;
         }
+        a{
+            padding-left: 2rem;
+            font-size: 1em;
+        }
+    }
 }
 
-    @media screen and (max-width: 850px) and (min-width: 491px){
-        #bars{
+@media screen and (max-width: 850px) and (min-width: 491px){
+    #bars{
         display: inline-block;
         padding-left:2rem;
-        }
-    
-        .submenu.closed{
+    }
+
+    .submenu.closed{
         max-height: 0;
-        }
+    }
 
-        .intro {
-            h1{
-                font-size: 1.5rem;
-                max-width: 20rem;
-          }
-        
-            p{
-                font-size: 1.25rem;
-                max-width: 25rem;
-          }
-        
-            a{
-                font-size: 1.2rem;
-          }
+    .intro {
+        h1{
+            font-size: 1.5rem;
+            max-width: 20rem;
         }
+        p{
+            font-size: 1.25rem;
+            max-width: 25rem;
+        }
+        a{
+            font-size: 1.2rem;
+        }
+    }
 
-        .product{
-            flex-direction: column;
-        }
+    .product{
+        flex-direction: column;
+    }
 
-        .productText {
-            p{
-                font-size: 1em;
-                padding-top:2rem;
-            }
-        
-            a{
-                font-size: 1em;
-            }
-        }
-
-        .productImage{
-        img{
-            max-width: 100%;
-          }
-        }
-        
-          .motto{
-            font-size: 1.75em;
-            line-height: 1em;
-          }
-        
-          .mottoExpanded{
+    .productText{
+        p{
             font-size: 1em;
-            line-height: 1.350em;
-          }
-        
-          .mainMenu{
-            display:none;
-          }
-
-          .menuEnd{
-            line-height: 2rem;
-            ul{
-                li{
-                    text-align:center;
-                    font-size: 0.85rem;
-                }
-            }
-          }
-
-          .sponsor{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
-          .contact{
-            padding-top: 2rem;
-            line-height: 2rem;
-          }
-        
-          .contactInfo{
-            flex-direction: column;
-            align-items: center;
-          }
-        
-          .copyright{
-            flex-direction: column-reverse;
-            align-items: center;
-          }
-        
-          .socialMedia{
-            padding-bottom: 2rem;
-          }
-        
+            padding-top:2rem;
         }
+        a{
+            font-size: 1em;
+        }
+    }
 
-        @media screen and (max-width: 490px){
+    .productImage img{
+        max-width: 100%;
+    }
+    
+    .motto{
+        font-size: 1.75em;
+        line-height: 1em;
+    }
 
-            #bars{
-              display: inline-block;
-              padding-left:2rem;
-            }
-          
-            .menu ul{
-              display: none;
-            }
+    .mottoExpanded{
+        font-size: 1em;
+        line-height: 1.350em;
+    }
 
-            .intro {
-                h1{
-                    font-size: 1.25rem;
-                    max-width: 20rem;
-                } 
-            
-                p{
-                    font-size: 1rem;
-                    max-width: 20rem;
-                }
-            
-                a{
-                    font-size: 1rem;
-                    display: block;
-              }
-            }
+    .mainMenu{
+        display:none;
+    }
 
-            .logoEnd {
-                justify-content: flex-end;
-                margin-right: 2rem;
+    .menuEnd{
+        line-height: 2rem;
+        ul{
+            li{
+                text-align:center;
+                font-size: 0.85rem;
             }
-              
-            .product{
-                flex-direction: column;
-            }
+        }
+    }
 
-            .productText {
-                p{
-                    font-size: 1em;
-                    padding-top:2rem;
-                }
-            
-                a{
-                    font-size: 1em;
-                }
-            }
+    .sponsor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        padding-top: 2rem;
+        line-height: 2rem;
+    }
 
-            .productImage img{
-                max-width: 100%;
-              }
-            
-              .vision{
-                flex-direction: column;
-              }
-            
-              .motto{
-                font-size: 1.75em;
-                line-height: 1em;
-                padding-bottom:3rem;
-              }
-            
-              .mottoExpanded{
-                font-size: 1em;
-                line-height: 1.350em;
-              }
-            
-              .mainMenu{
-                display:none;
-              }
+    .contactInfo{
+        flex-direction: column;
+        align-items: center;
+    }
 
-              .menuEnd{
-                line-height: 2rem;
-                ul{
-                    li{
-                        text-align:center;
-                        font-size: 0.85rem;
-                    }
-                }
-              }
-              
-              .sponsor{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-              }
-              .contact{
-                padding-top: 2rem;
-                line-height: 2rem;
-              }
-            
-              .contactInfo{
-                flex-direction: column;
-                align-items: center;
-              }
-            
-              .copyright{
-                flex-direction: column-reverse;
-                align-items: center;
-              }
-            
-              .socialMedia{
-                padding-bottom: 2rem;
-              }
-            }
-            
-              
-          
+    .copyright{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .socialMedia{
+        padding-bottom: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 490px){
+
+    #bars{
+        display: inline-block;
+        padding-left:2rem;
+    }
+    
+    .menu ul{
+        display: none;
+    }
+
+    .intro {
+        h1{
+            font-size: 1.25rem;
+            max-width: 20rem;
+        } 
+        p{
+            font-size: 1rem;
+            max-width: 20rem;
+        }
+        a{
+            font-size: 1rem;
+            display: block;
+        }
+    }
+
+    .logoEnd {
+        justify-content: flex-end;
+        margin-right: 2rem;
+    }
         
-        
-        
+    .product{
+        flex-direction: column;
+    }
 
+    .productText {
+        p{
+            font-size: 1em;
+            padding-top:2rem;
+        }
+        a{
+            font-size: 1em;
+        }
+    }
 
+    .productImage img{
+        max-width: 100%;
+    }
+    
+    .vision{
+        flex-direction: column;
+    }
 
-        
+    .motto{
+        font-size: 1.75em;
+        line-height: 1em;
+        padding-bottom:3rem;
+    }
 
-  
-  
+    .mottoExpanded{
+        font-size: 1em;
+        line-height: 1.350em;
+    }
 
-  
+    .mainMenu{
+        display:none;
+    }
 
-  
-  
-  
- 
-  
+    .menuEnd{
+        line-height: 2rem;
+        ul{
+            li{
+                text-align:center;
+                font-size: 0.85rem;
+            }
+        }
+    }
+    
+    .sponsor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        padding-top: 2rem;
+        line-height: 2rem;
+    }
 
+    .contactInfo{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .copyright{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .socialMedia{
+        padding-bottom: 2rem;
+    }
+}
