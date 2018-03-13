@@ -182,7 +182,6 @@ header {
   flex-direction: column;
   justify-content: center; }
   .productText p {
-    max-width: 28rem;
     font-size: 1.125em;
     line-height: 1.625em;
     font-weight: lighter; }
@@ -246,10 +245,74 @@ footer {
 .socialMedia a i {
   padding-right: 0.5rem; }
 
-.productEnd {
+.videoInStore {
+  flex: 1.25; }
+
+.inStore {
+  flex-direction: column;
+  max-width: 60%;
+  margin-left: 26.5rem;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.logoInStore a img {
+  max-width: 20rem; }
+
+.productInStore {
+  justify-content: space-between; }
+
+.textInStore {
+  flex: 1; }
+  .textInStore h1 {
+    max-width: 75%;
+    font-size: larger;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .textInStore p {
+    max-width: 75%;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .textInStore ul {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .textInStore ul li {
+      font-weight: lighter;
+      line-height: 1.625em; }
+  .textInStore a {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+.imageInStore {
+  background-color: #f3f3f3;
   display: flex;
-  justify-content: flex-end;
-  flex: 0.5; }
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  height: 31rem;
+  flex: 1; }
+  .imageInStore img {
+    width: 70%; }
+
+.natural {
+  display: flex;
+  justify-content: center;
+  color: #1ABC9C; }
+  .natural .smallContainer {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem; }
+    .natural .smallContainer img {
+      height: 3rem;
+      width: auto;
+      padding-bottom: 0.75rem; }
+    .natural .smallContainer span {
+      font-size: small;
+      font-weight: bold; }
 
 @media screen and (max-width: 1081px) and (min-width: 951px) {
   .productImage img {
