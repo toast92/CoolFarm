@@ -5,7 +5,7 @@
     padding-right: 1rem;
 }
 
-$teal : #407F7F;
+$teal : #1ABC9C;
 $smokey: #f3f3f3;
 
 body{
@@ -246,10 +246,9 @@ footer{
         @include padding(1rem);
     }
     p{
-
+        @include padding(1rem);
         max-width: 75%;
         font-size: 1.1rem;
-        @include padding(1rem);
     }
     ul{
         @include padding(1rem);
@@ -279,7 +278,7 @@ footer{
 .natural{
     display: flex;
     justify-content: center;
-    color: #1ABC9C;
+    color: $teal;
     .smallContainer{
         margin-right:2rem;
         margin-left:2rem;
@@ -294,6 +293,7 @@ footer{
         span{
             font-size: small;
             font-weight: bold;
+            align-content: center;
         }
     }
 }
@@ -306,6 +306,10 @@ footer{
 
 @media screen and (max-width: 950px) and (min-width:851px){
     .productText{
+        h1{
+            font-size: 1em;
+            padding-left:2rem;
+        }
         p{
             font-size: 1em;
             padding-left:2rem;
@@ -345,7 +349,19 @@ footer{
         flex-direction: column;
     }
 
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
     .productText{
+        h1{
+            padding-top: 2rem;
+            font-size: 1.2rem;
+        }
+        ul{
+            padding-top: 2rem;
+            font-size: 1em;
+        }
         p{
             font-size: 1em;
             padding-top:2rem;
@@ -371,6 +387,13 @@ footer{
 
     .mainMenu{
         display:none;
+    }
+
+    .natural{
+        flex-direction: column;
+        .smallContainer{
+            align-items: center;
+        }
     }
 
     .menuEnd{
@@ -406,6 +429,8 @@ footer{
     .socialMedia{
         padding-bottom: 2rem;
     }
+
+
     
 }
 
@@ -444,7 +469,19 @@ footer{
         flex-direction: column;
     }
 
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
     .productText {
+        h1{
+            padding-top: 2rem;
+            font-size: 1.2rem;
+        }
+        ul{
+            padding-top: 2rem;
+            font-size: 1em;
+        }
         p{
             font-size: 1em;
             padding-top:2rem;
@@ -471,6 +508,13 @@ footer{
     .mottoExpanded{
         font-size: 1em;
         line-height: 1.350em;
+    }
+
+    .natural{
+        flex-direction: column;
+        .smallContainer{
+            align-items: center;
+        }
     }
 
     .mainMenu{

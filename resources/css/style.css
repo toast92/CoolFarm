@@ -97,7 +97,7 @@ body {
   display: none; }
 
 header {
-  background-color: #407F7F;
+  background-color: #1ABC9C;
   color: white;
   padding-bottom: 6rem;
   padding-left: 4rem;
@@ -186,7 +186,7 @@ header {
     line-height: 1.625em;
     font-weight: lighter; }
   .productText a {
-    color: #407F7F;
+    color: #1ABC9C;
     font-weight: bold;
     padding-top: 3rem; }
 
@@ -271,10 +271,10 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem; }
   .textInStore p {
-    max-width: 75%;
-    font-size: 1.1rem;
     padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    max-width: 75%;
+    font-size: 1.1rem; }
   .textInStore ul {
     padding-left: 1rem;
     padding-right: 1rem; }
@@ -312,12 +312,16 @@ footer {
       padding-bottom: 0.75rem; }
     .natural .smallContainer span {
       font-size: small;
-      font-weight: bold; }
+      font-weight: bold;
+      align-content: center; }
 
 @media screen and (max-width: 1081px) and (min-width: 951px) {
   .productImage img {
     max-width: 30rem; } }
 @media screen and (max-width: 950px) and (min-width: 851px) {
+  .productText h1 {
+    font-size: 1em;
+    padding-left: 2rem; }
   .productText p {
     font-size: 1em;
     padding-left: 2rem; }
@@ -344,6 +348,15 @@ footer {
   .product {
     flex-direction: column; }
 
+  .reverse {
+    flex-direction: column-reverse; }
+
+  .productText h1 {
+    padding-top: 2rem;
+    font-size: 1.2rem; }
+  .productText ul {
+    padding-top: 2rem;
+    font-size: 1em; }
   .productText p {
     font-size: 1em;
     padding-top: 2rem; }
@@ -363,6 +376,11 @@ footer {
 
   .mainMenu {
     display: none; }
+
+  .natural {
+    flex-direction: column; }
+    .natural .smallContainer {
+      align-items: center; }
 
   .menuEnd {
     line-height: 2rem; }
@@ -414,6 +432,15 @@ footer {
   .product {
     flex-direction: column; }
 
+  .reverse {
+    flex-direction: column-reverse; }
+
+  .productText h1 {
+    padding-top: 2rem;
+    font-size: 1.2rem; }
+  .productText ul {
+    padding-top: 2rem;
+    font-size: 1em; }
   .productText p {
     font-size: 1em;
     padding-top: 2rem; }
@@ -434,6 +461,11 @@ footer {
   .mottoExpanded {
     font-size: 1em;
     line-height: 1.350em; }
+
+  .natural {
+    flex-direction: column; }
+    .natural .smallContainer {
+      align-items: center; }
 
   .mainMenu {
     display: none; }
