@@ -1,0 +1,571 @@
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto; }
+
+.mySlides {
+  display: none; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPGQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+body {
+  font-family: 'Lato', sans-serif; }
+
+#bars {
+  display: none; }
+
+header {
+  background-color: #407F7F;
+  color: white;
+  padding-bottom: 6rem;
+  padding-left: 4rem;
+  padding-right: 4rem; }
+
+.submenu {
+  max-height: 200px;
+  overflow: hidden;
+  transition: 0.8s; }
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto; }
+
+.headerIntro {
+  display: flex;
+  justify-content: space-around; }
+
+.intro {
+  margin-top: 4.5rem; }
+  .intro a {
+    color: white;
+    font-size: 1.50rem;
+    font-weight: bold;
+    display: block; }
+    .intro a img {
+      width: 13rem;
+      margin-bottom: 5rem; }
+  .intro h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    max-width: 25rem; }
+  .intro p {
+    font-size: 1.70rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    max-width: 32rem; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 9rem;
+  align-items: flex-end;
+  flex: 1.5; }
+  .menu ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold; }
+  .menu ul a:hover {
+    color: black; }
+  .menu ul li {
+    margin-bottom: 0.50rem; }
+
+.logo {
+  padding-top: 2rem; }
+  .logo a {
+    display: block; }
+    .logo a img {
+      max-width: 20rem; }
+
+.product {
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  padding-left: 2rem; }
+
+.productReverse {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.productImage {
+  flex: 1.25; }
+  .productImage img {
+    max-width: 100%;
+    max-height: 35rem; }
+
+.productText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .productText p {
+    font-size: 1.125em;
+    line-height: 1.625em;
+    font-weight: lighter; }
+  .productText a {
+    color: #1ABC9C;
+    font-weight: bold;
+    padding-top: 3rem; }
+
+.logoEnd {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8rem; }
+
+.vision {
+  display: flex;
+  padding-bottom: 5rem; }
+
+.motto {
+  flex: 1;
+  font-size: 2.25em;
+  line-height: 1.125em;
+  font-weight: 700;
+  padding-left: 2rem; }
+
+.mottoExpanded {
+  flex: 2;
+  padding-left: 2rem;
+  font-size: 1.125em;
+  line-height: 1.625em;
+  font-weight: lighter; }
+
+footer {
+  background-color: #333;
+  color: rgba(244, 244, 244, 0.4); }
+  footer ul li a {
+    color: rgba(244, 244, 244, 0.4);
+    text-decoration: none; }
+  footer img {
+    max-width: 20rem; }
+  footer .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem; }
+
+.contactInfo {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  justify-content: space-between; }
+
+.menuEnd h4 {
+  padding-top: 2rem; }
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem; }
+  .copyright a i {
+    color: rgba(244, 244, 244, 0.4); }
+
+.socialMedia a i {
+  padding-right: 0.5rem; }
+
+.videoInStore {
+  flex: 1.25; }
+
+.inStore {
+  flex-direction: column;
+  max-width: 60%;
+  margin-left: 26.5rem;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.logoInStore a img {
+  max-width: 20rem; }
+
+.productInStore {
+  justify-content: space-between; }
+
+.textInStore {
+  flex: 1; }
+  .textInStore h1 {
+    max-width: 75%;
+    font-size: larger;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .textInStore p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 75%;
+    font-size: 1.1rem; }
+  .textInStore ul {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .textInStore ul li {
+      font-weight: lighter;
+      line-height: 1.625em; }
+  .textInStore a {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+.imageInStore {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  height: 31rem;
+  flex: 1; }
+  .imageInStore img {
+    width: 70%; }
+
+.natural {
+  display: flex;
+  justify-content: center;
+  color: #1ABC9C; }
+  .natural .smallContainer {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem; }
+    .natural .smallContainer img {
+      height: 3rem;
+      width: auto;
+      padding-bottom: 0.75rem; }
+    .natural .smallContainer span {
+      font-size: small;
+      font-weight: bold;
+      align-content: center; }
+
+#title {
+  font-size: 2.25em;
+  line-height: 1.125em;
+  font-weight: 700;
+  color: black;
+  width: 40rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom-width: 3px;
+  border-bottom-color: #1ABC9C;
+  border-bottom-style: solid;
+  margin-bottom: 2rem; }
+
+.line {
+  display: flex;
+  justify-content: space-around; }
+
+.article {
+  flex: 1;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem; }
+  .article span {
+    display: block;
+    margin-top: 1rem;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-color: #f3f3f3;
+    padding-top: 10px;
+    color: #ccc;
+    font-style: italic;
+    font-size: 0.80rem; }
+  .article h1 {
+    font-size: 1.375em;
+    line-height: 1.375em;
+    width: 70%; }
+  .article a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter; }
+    .article a p {
+      width: 80%;
+      font-size: 1.2rem; }
+
+.newsFooter {
+  margin-top: 5rem; }
+
+@media screen and (max-width: 1081px) and (min-width: 951px) {
+  .productImage img {
+    max-width: 30rem; } }
+@media screen and (max-width: 950px) and (min-width: 851px) {
+  .productText h1 {
+    font-size: 1em;
+    padding-left: 2rem; }
+  .productText p {
+    font-size: 1em;
+    padding-left: 2rem; }
+  .productText a {
+    padding-left: 2rem;
+    font-size: 1em; }
+
+  .article h1 {
+    font-size: 1.2rem; }
+  .article a p {
+    font-size: 1rem; } }
+@media screen and (max-width: 850px) and (min-width: 491px) {
+  #bars {
+    display: inline-block;
+    padding-left: 2rem; }
+
+  .submenu.closed {
+    max-height: 0; }
+
+  .intro h1 {
+    font-size: 1.5rem;
+    max-width: 20rem; }
+  .intro p {
+    font-size: 1.25rem;
+    max-width: 25rem; }
+  .intro a {
+    font-size: 1.2rem; }
+
+  .product {
+    flex-direction: column; }
+
+  .reverse {
+    flex-direction: column-reverse; }
+
+  .productText h1 {
+    padding-top: 2rem;
+    font-size: 1.2rem; }
+  .productText ul {
+    padding-top: 2rem;
+    font-size: 1em; }
+  .productText p {
+    font-size: 1em;
+    padding-top: 2rem; }
+  .productText a {
+    font-size: 1em; }
+
+  .productImage img {
+    max-width: 100%; }
+
+  .motto {
+    font-size: 1.75em;
+    line-height: 1em; }
+
+  .mottoExpanded {
+    font-size: 1em;
+    line-height: 1.350em; }
+
+  .mainMenu {
+    display: none; }
+
+  .natural {
+    flex-direction: column; }
+    .natural .smallContainer {
+      align-items: center; }
+
+  .menuEnd {
+    line-height: 2rem; }
+    .menuEnd ul li {
+      text-align: center;
+      font-size: 0.85rem; }
+
+  .sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .contact {
+    padding-top: 2rem;
+    line-height: 2rem; }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: center; }
+
+  .copyright {
+    flex-direction: column-reverse;
+    align-items: center; }
+
+  .socialMedia {
+    padding-bottom: 2rem; }
+
+  .line {
+    flex-direction: column; }
+
+  .article h1 {
+    font-size: 1rem;
+    width: 100%; }
+  .article a p {
+    font-size: 0.9rem;
+    width: 100%; } }
+@media screen and (max-width: 490px) {
+  #bars {
+    display: inline-block;
+    padding-left: 2rem; }
+
+  .menu ul {
+    display: none; }
+
+  .intro h1 {
+    font-size: 1.25rem;
+    max-width: 20rem; }
+  .intro p {
+    font-size: 1rem;
+    max-width: 20rem; }
+  .intro a {
+    font-size: 1rem;
+    display: block; }
+
+  .logoEnd {
+    justify-content: flex-end;
+    margin-right: 2rem; }
+
+  .product {
+    flex-direction: column; }
+
+  .reverse {
+    flex-direction: column-reverse; }
+
+  .productText h1 {
+    padding-top: 2rem;
+    font-size: 1.2rem; }
+  .productText ul {
+    padding-top: 2rem;
+    font-size: 1em; }
+  .productText p {
+    font-size: 1em;
+    padding-top: 2rem; }
+  .productText a {
+    font-size: 1em; }
+
+  .productImage img {
+    max-width: 100%; }
+
+  .vision {
+    flex-direction: column; }
+
+  .motto {
+    font-size: 1.75em;
+    line-height: 1em;
+    padding-bottom: 3rem; }
+
+  .mottoExpanded {
+    font-size: 1em;
+    line-height: 1.350em; }
+
+  .natural {
+    flex-direction: column; }
+    .natural .smallContainer {
+      align-items: center; }
+
+  .mainMenu {
+    display: none; }
+
+  .menuEnd {
+    line-height: 2rem; }
+    .menuEnd ul li {
+      text-align: center;
+      font-size: 0.85rem; }
+
+  .sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .contact {
+    padding-top: 2rem;
+    line-height: 2rem; }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: center; }
+
+  .copyright {
+    flex-direction: column-reverse;
+    align-items: center; }
+
+  .socialMedia {
+    padding-bottom: 2rem; }
+
+  .line {
+    flex-direction: column; }
+
+  .article h1 {
+    font-size: 1rem;
+    width: 100%; }
+  .article a p {
+    font-size: 0.9rem;
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

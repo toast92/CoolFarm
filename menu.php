@@ -5,7 +5,7 @@
       <li><a href="instore.php">in/store</a></li>
       <li><a href="#inControl">in/control</a></li>
       <li><a href="#Eye">Eye</a></li>
-      <li><a href="#company">Company</a></li>
+      <li><a href="company.php">Company</a></li>
       <li><a href="news.php">News</a></li>
       <li><a href="#contacts">Contacts</a></li>
     </ul>'

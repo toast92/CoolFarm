@@ -10,6 +10,7 @@ $smokey: #f3f3f3;
 
 body{
     font-family: 'Lato', sans-serif;
+    
 }
 
 #bars{
@@ -17,7 +18,7 @@ body{
 }
 
 header{
-    background-color: $teal;
+    background-color: #407F7F;
     color: white;
     padding-bottom: 6rem;
     padding-left: 4rem;
@@ -298,6 +299,65 @@ footer{
     }
 }
 
+#title {
+    font-size: 2.25em;
+    line-height: 1.125em;
+    font-weight: 700;
+    color: black;
+    width: 40rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    border-bottom-width: 3px;
+    border-bottom-color: $teal;
+    border-bottom-style: solid;
+    margin-bottom: 2rem;
+}
+
+.line{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.article{
+    flex: 1;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    span{
+        display: block;
+        margin-top: 1rem;
+        border-top-width: 3px;
+        border-top-style: solid;
+        border-color: #f3f3f3;
+        padding-top: 10px;
+        color: #ccc;
+        font-style: italic;
+        font-size: 0.80rem;
+    }
+    h1{
+        font-size: 1.375em;
+        line-height: 1.375em;
+        width: 70%;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: lighter;
+        p{
+            width: 80%;
+            font-size: 1.2rem;
+        }
+    }
+    
+}
+
+.newsFooter{
+    margin-top: 5rem;
+}
+
+
+
 @media screen and (max-width: 1081px) and (min-width: 951px){
     .productImage img{
         max-width: 30rem;
@@ -317,6 +377,17 @@ footer{
         a{
             padding-left: 2rem;
             font-size: 1em;
+        }
+    }
+
+    .article{
+        h1{
+            font-size: 1.2rem;
+        }
+        a{
+            p{
+                font-size: 1rem;
+            }
         }
     }
 }
@@ -430,8 +501,23 @@ footer{
         padding-bottom: 2rem;
     }
 
+    .line{
+        flex-direction: column;
+    }
 
-    
+    .article{
+        h1{
+            font-size: 1rem;
+            width: 100%;
+        }
+        a{
+            p{
+                font-size: 0.9rem;
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 490px){
@@ -553,5 +639,22 @@ footer{
 
     .socialMedia{
         padding-bottom: 2rem;
+    }
+
+    .line{
+        flex-direction: column;
+    }
+    
+    .article{
+        h1{
+            font-size: 1rem;
+            width: 100%;
+        }
+        a{
+            p{
+                font-size: 0.9rem;
+                width: 100%;
+            }
+        }
     }
 }
