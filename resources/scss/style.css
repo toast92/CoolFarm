@@ -363,8 +363,6 @@ footer {
   margin-top: 5rem; }
 
 .companyHeader h1 {
-  margin-top: 4rem;
-  margin-right: 20rem;
   font-size: 2.25em;
   line-height: 1.125em;
   font-weight: 700;
@@ -373,7 +371,76 @@ footer {
   border-bottom-color: #1ABC9C;
   text-align: right;
   padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-right: 20rem;
   margin-bottom: 2rem; }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  .contacts h1 {
+    font-size: 2.25em;
+    line-height: 1.125em;
+    font-weight: 700;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #1ABC9C;
+    text-align: right;
+    padding-bottom: 0.5rem;
+    margin-bottom: 5px; }
+  .contacts a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.375em;
+    line-height: 1.375em;
+    font-weight: 300;
+    text-align: right; }
+    .contacts a li {
+      margin-bottom: 5px; }
+  .contacts a:hover {
+    color: #1ABC9C; }
+
+.contactImage {
+  flex: 1.2; }
+  .contactImage img {
+    max-width: 90%; }
+
+.contactText {
+  margin-left: 7rem; }
+  .contactText h3 {
+    font-size: 2.25em;
+    line-height: 1.125em;
+    font-weight: 700; }
+  .contactText h4 {
+    font-size: 1.375em;
+    line-height: 1.375em;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 1.5rem; }
+  .contactText ul {
+    margin-bottom: 1.5rem; }
+    .contactText ul li {
+      font-style: normal;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      color: #111;
+      margin-bottom: 10px; }
+  .contactText span {
+    font-weight: lighter; }
+    .contactText span a {
+      font-weight: lighter;
+      text-decoration: none; }
+
+.productContact {
+  padding-left: 0rem; }
+
+.contactReverse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
 
 @media screen and (max-width: 1081px) and (min-width: 951px) {
   .productImage img {
@@ -392,7 +459,17 @@ footer {
   .article h1 {
     font-size: 1.2rem; }
   .article a p {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  .contactText h3 {
+    font-size: 2em;
+    line-height: 1.125em;
+    font-weight: 700; }
+  .contactText h4 {
+    font-size: 1.1em;
+    margin-bottom: 1rem; }
+  .contactText ul {
+    margin-bottom: 5px; } }
 @media screen and (max-width: 850px) and (min-width: 491px) {
   #bars {
     display: inline-block;
@@ -481,7 +558,37 @@ footer {
     width: 100%; }
   .article a p {
     font-size: 0.9rem;
-    width: 100%; } }
+    width: 100%; }
+
+  .contactProductReverse {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0; }
+
+  .contactText {
+    align-items: baseline; }
+    .contactText h3 {
+      margin-top: 1rem;
+      font-size: 1.75em;
+      line-height: 1.125em;
+      font-weight: 700; }
+    .contactText h4 {
+      font-size: 1.1em;
+      margin-bottom: 0.5rem; }
+    .contactText ul {
+      margin-bottom: 5px;
+      padding-top: 1rem; }
+
+  .contacts {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .contacts h1 {
+      font-size: 1.5em;
+      line-height: 1.125em; }
+    .contacts a {
+      font-size: 1.1em; }
+      .contacts a li {
+        margin-bottom: 2px; } }
 @media screen and (max-width: 490px) {
   #bars {
     display: inline-block;
@@ -579,6 +686,36 @@ footer {
     width: 100%; }
   .article a p {
     font-size: 0.9rem;
-    width: 100%; } }
+    width: 100%; }
+
+  .contactProductReverse {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0; }
+
+  .contactText {
+    align-items: baseline; }
+    .contactText h3 {
+      margin-top: 1rem;
+      font-size: 1.75em;
+      line-height: 1.125em;
+      font-weight: 700; }
+    .contactText h4 {
+      font-size: 1.1em;
+      margin-bottom: 0.5rem; }
+    .contactText ul {
+      margin-bottom: 5px;
+      padding-top: 1rem; }
+
+  .contacts {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .contacts h1 {
+      font-size: 1.5em;
+      line-height: 1.125em; }
+    .contacts a {
+      font-size: 1.1em; }
+      .contacts a li {
+        margin-bottom: 2px; } }
 
 /*# sourceMappingURL=style.css.map */

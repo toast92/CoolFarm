@@ -7,6 +7,6 @@
       <li><a href="#Eye">Eye</a></li>
       <li><a href="company.php">Company</a></li>
       <li><a href="news.php">News</a></li>
-      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="contact.php">Contacts</a></li>
     </ul>'
 ?>

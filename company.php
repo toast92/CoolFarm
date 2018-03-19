@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="./resources/scss/style.css">
     <link rel="stylesheet" type="text/css" href="./resources/reset.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>CoolFarm</title>
   </head>
   <body>
@@ -45,30 +46,31 @@
 
     <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 2</div>
-  <img src="./resources/images/funnycow.jpg" style="width:100%">
-</div>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="./resources/images/funnycow.jpg" style="width:100%">
+      </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 2</div>
-  <img src="./resources/images/coolcow.jpg" style="width:100%">
-</div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="./resources/images/coolcow.jpg" style="width:100%">
+      </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</div>
+    </div>
 
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span> 
-<span class="dot" onclick="currentSlide(2)"></span> 
-</div>
-
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+    </div>
 
     <footer>
       <?php include 'footer.php';?>
     </footer>
+
     <script type="text/javascript" src="./resources/script.js"></script>
+    
   </body>
 </html>
